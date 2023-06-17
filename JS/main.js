@@ -6,11 +6,12 @@ import { llenarDiv } from './gif.js';
 
 const getPokemon = async () => {
     const nombre = inputNombre.value;
-    const stats = []
+    const stats = [];
 
     try {
         const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
         //Se obtienen los 6 stats de cada pokémon
+        console.log(data);
         data.stats.forEach((stat) => {
             stats.push(stat.base_stat);
             console.log(stat.base_stat);
@@ -23,7 +24,7 @@ const getPokemon = async () => {
             const url_img_back = data.sprites.versions["generation-v"]["black-white"]["animated"]["back_default"];
             llenarDiv(url_img_front, url_img_back);
         } catch (error) {
-            alert("El pokemon pertenece a una generación superior a la 5 y no es posible mostrarlo")
+            alert("El pokemon pertenece a una generación superior a la 5 y no es posible mostrarlo");
         }
 
     } catch (error) {
