@@ -5,7 +5,8 @@ import { llenarDiv } from './gif.js';
 
 
 const getPokemon = async () => {
-    const nombre = inputNombre.value.toLowerCase();
+    var nombre = inputNombre.value;
+    nombre = nombre.toLowerCase();
     const stats = [];
 
     try {
