@@ -9,7 +9,7 @@ const getPokemon = async () => {
     const stats = []
 
     try {
-        const { data } = await axios.get(`http://pokeapi.co/api/v2/pokemon/${nombre}`);
+        const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
         //Se obtienen los 6 stats de cada pokémon
         data.stats.forEach((stat) => {
             stats.push(stat.base_stat);
