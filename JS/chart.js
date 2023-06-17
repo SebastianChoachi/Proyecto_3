@@ -38,6 +38,7 @@ const config = {
 
 export const miGrafico= new Chart (ctx, config);
 
+/// Se genera un número aleatorio que será usado en "agregarPokemon" para utilizar un color aleatorio
 function getRandomNumber(min, max) {
     // Genera un número aleatorio entre min (incluido) y max (excluido)
     const randomNumber = Math.random() * (max - min) + min;
@@ -64,3 +65,7 @@ export const agregarPokemon = (nombre, stats) => {
     datosRadar.datasets[1]=graficaPokemon;
     miGrafico.update();
 };
+
+
+
+

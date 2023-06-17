@@ -1,3 +1,39 @@
 #navimg{
     margin-right: 10px;
 }
+.colornav{
+    background-color: rgb(88, 126, 232);
+}
+
+#form{
+    margin-top:0%;
+    padding-left: 1%;
+}
+
+.avatar{
+    height: 150px;
+}
+
+#imagenes{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*column-gap: 1%;*/
+    padding-bottom: 5%;
+    max-height: 200px;
+    margin-top: 2%;
+}
+
+#front,#back{
+    display: flex;   
+    justify-content: center;
+    /*height: 200px;
+    padding-top: 200px;*/
+    
+}
+
+#grafico{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
